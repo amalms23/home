@@ -1,0 +1,215 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar top */
+.navbar-top {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar-top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    right: 0px;
+}
+
+.navbar-top ul li {
+    margin-left: 10px;
+}
+
+.navbar-top ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sidenav */
+.sidenav {
+    background-color: #fff;
+    color: #333;
+    border-bottom-right-radius: 25px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    padding-top: 20px;
+}
+
+.sidenav .profile {
+    text-align: center;
+}
+
+.sidenav .profile .image-container {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.sidenav .profile img {
+    max-width: 100%;
+}
+
+.sidenav .profile .name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.sidenav .profile .job {
+    color: #777;
+}
+
+.sidenav-url {
+    text-align: center; /* Align content center horizontally */
+}
+
+.sidenav .sidenav-url .url {
+    margin-bottom: 10px;
+}
+
+.sidenav .sidenav-url .url a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sidenav .sidenav-url .url a.active {
+    font-weight: bold;
+}
+
+.sidenav .sidenav-url .url hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sidenav .Google-Maps {
+    margin-top: 20px;
+}
+
+.sidenav .revolver-maps {
+    margin-top: 20px;
+}
+
+/* Main content */
+.main {
+    padding: 20px;
+    margin-left: 250px; /* Adjusted margin to account for sidenav width */
+}
+
+.main h2 {
+    margin-bottom: 20px;
+}
+
+.main .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.main .card-body {
+    line-height: 1.6;
+}
+
+.main .card-body .info-block strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.main .card-body .info-block p {
+    margin: 0;
+}
+
+.main .card-body .info-block-1 pp {
+    margin: 2px;
+}
+
+.main .social-media {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.main .fa-stack {
+    font-size: 2em;
+}
+
+.main .fa-stack a {
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main .fa-stack a:hover {
+    transform: scale(1.2);
+}
+
+/* Define custom colors */
+        :root {
+            --darkblue: rgb(0, 0, 0.4);
+            --mygray: rgb(0.5, 0.5, 0.5);
+        }
+
+        /* Format section and subsection titles */
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--darkblue);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--darkblue);
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-weight: bold;
+            color: var(--darkblue);
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        /* Hyperlinks */
+        a {
+            color: var(--darkblue);
+            text-decoration: none;
+        }
+
+        /* Header and Footer */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* List items */
+        ul, ol {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        /* References */
+        .references {
+            margin-top: 20px;
+        }
+
+        .reference-item {
+            margin-bottom: 10px;
+        }
+

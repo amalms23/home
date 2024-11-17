@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable = yes">
+    <title>Teaching</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <style>
+        /* Add CSS for refined navigation buttons */
+        .back-button, .back-top {
+            margin-top: 20px;
+        }
+
+        .back-button a, .back-top a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF; /* Adjust the color as needed */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button a:hover, .back-top a:hover {
+            background-color: #0056b3; /* Adjust the hover color as needed */
+        }
+
+        /* Add CSS for academic style */
+        .main .card-body .course {
+            font-size: 16px; /* Adjust the font size as needed */
+            margin-bottom: 20px;
+        }
+
+        /* Add CSS for centered welcome text */
+        .navbar-top {
+            text-align: center;
+        }
+
+        .navbar-top h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ffffff; /* Adjust the color as needed */
+            text-shadow: 1px 1px 2px rgb(197, 239, 249); /* Add a subtle shadow for a professional effect */
+        }
+
+        .course-link {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #007BFF; /* Adjust color as needed */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .course-link:hover {
+            background-color: #0056b3; /* Adjust hover color as needed */
+        }
+
+
+        /* Move the arrow to the left end */
+        .navbar-top ul {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar top -->
+    <div class="navbar-top">
+        <div class="title">
+            <h1>TEACHING</h1>
+        </div>
+
+        <!-- Navbar -->
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="fa fa-arrow-left fa-2x"></i> <!-- Use the left-facing arrow icon -->
+                </a>
+            </li>
+        </ul>
+        <!-- End -->
+    </div>
+    <!-- End -->
+
+    <!-- Main Content -->
+    <div class="main">
+        <div class="card">
+            <div class="card-body">
+                <!-- Example Teaching List -->
+                <div class="course">
+                    <strong>3. AE333: AEROSPACE STRUCTURES I (Teaching Assistant)</strong>
+                    <p>Semester: Aug 2024 - Nov 2024</p>
+                    <p>Description: Assisted Dr. G.M Kamath in the smooth conduct of the course, including preparation of course materials.</p>
+                    <a href="AE333.html" class="course-link">View Prepared Course Materials</a>
+                </div>
+               
+
+                <div class="course">
+                    <strong>2. ESO202: Mechanics of Solids (Teaching Assistant) </strong>
+                    <p>Semester: Jan 2024 - May 2024</p>
+                    <p>Description: Assisted Dr. Pritam Chakraborty on invigilation and other tasks to ensure the smooth conduct of the course.</p>
+                </div>
+
+                <div class="course">
+                    <strong>1. ESO202: Mechanics of Solids (Teaching Assistant) </strong>
+                    <p>Semester: Aug 2023 - Nov 2023</p>
+                    <p>Description: Assisted Dr. G.M Kamath and Dr. Pritam Chakraborty on invigilation and other tasks to ensure the smooth conduct of the course.</p>
+                </div>
+
+                <!-- Add more courses as needed -->
+
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <div class="back-top">
+            <a href="#top">Back to Top</a>
+        </div>
+
+        <script>
+            document.querySelector('.back-top a').addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
+
+        <!-- Logos Section -->
+        </br>
+        <div class="logos">
+            <!-- Add your institute logos here -->
+            <img src="bluelog.jpg" alt="Institute Logo 1" class="logo">
+            <img src="NITT_logo.png" alt="Institute Logo 2" class="logo">
+            <!-- Add more logos as needed -->
+        </div>
+    </div>
+    <!-- End Main Content -->
+</body>
+</html>
