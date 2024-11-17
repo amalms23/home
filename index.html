@@ -2,36 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable = yes">
-    <title>Profile</title>
+    <meta name="viewport" content="user-scalable=yes">
+    <title>AMAL M S | Homepage @ IIT Kanpur</title>
 
-    <!-- Custom Css -->
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- FontAwesome 5 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <!-- Navbar top -->
     <div class="navbar-top">
         <div class="title">
-            <h1>AMAL M S</h1>
+            <h1 align="center">Home</h1>
         </div>
 
         <!-- Navbar -->
         <ul>
-            <!--li>
-                <a href="#message">
-                    <span class="icon-count">29</span>
-                    <i class="fa fa-envelope fa-2x"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#notification">
-                    <span class="icon-count">59</span>
-                    <i class="fa fa-bell fa-2x"></i>
-                </a>
-            </li-->
             <li>
                 <a href="https://www.iitk.ac.in/aero/">
                     <i class="fa fa-sign-out-alt fa-2x"></i>
@@ -44,110 +32,142 @@
 
     <!-- Sidenav -->
     <div class="sidenav">
+        <!-- Profile Section -->
         <div class="profile">
-            <img src="dp.jpg" alt="" width="100" height="100">
-
+            <div class="image-container">
+                <img src="dp.jpg" alt="" width="200" height="200" id="profileImage">
+            </div>
             <div class="name">
                 AMAL M S
             </div>
             <div class="job">
-                Student || Researcher
+                Doctoral Researcher
             </div>
+            <br>
         </div>
 
+        <!-- Navigation Links -->
         <div class="sidenav-url">
+
+            <!-- CV Tab -->
             <div class="url">
-                <a href="https://www.linkedin.com/in/amalms/" class="active">Profile</a>
-                <hr align="center">
+                <a href="CV.html" class="active">Curriculum Vitae</a>
+                <hr>
             </div>
+
+            <!-- LinkedIn Profile -->
+            <div class="url">
+                <a href="https://www.linkedin.com/in/amalms/" class="active">LinkedIn Profile</a>
+                <hr>
+            </div>
+
+            <!-- Lab Website -->
+            <div class="url">
+                <a href="https://www.tmukhopadhyay.com/aems-lab" class="active">Lab Website</a>
+                <hr>
+            </div>
+
+            <!-- Publications Tab -->
+            <div class="url">
+                <a href="publications.html" class="active">Publications</a>
+                <hr>
+            </div>
+
+            <!-- Teaching Tab -->
+            <div class="url">
+                <a href="Teaching.html" class="active">Teaching</a>
+                <hr>
+            </div>
+            
+             <!-- Conferences Tab -->
              <div class="url">
-                <a href="https://www.tmukhopadhyay.com/aems-lab"class="active">Lab Website</a>
-                <hr align="center">
+                <a href="Conferences.html" class="active">Conferences</a>
+                <hr>
             </div>
+
+        </div>
+
+        <!-- Google Maps Section -->
+        <div class="Google-Maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.55837877668955!2d80.23246270757087!3d26.515765869211375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c378a01bf033b%3A0xd29fa57efac7c84a!2sArtificially%20Engineered%20Materials%20and%20Structures%20Laboratory!5e0!3m2!1sen!2sin!4v1704742882757!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Revolver Maps Section -->
+        <div class="revolver-maps">
+            <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=58vx7mc6358&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
         </div>
     </div>
     <!-- End -->
+    <script>
+        const profileImage = document.getElementById('profileImage');
+        const imageArray = ['dp.jpg', 'dp2.jpg', 'dp3.jpg', 'dp4.jpg'];
+        let currentIndex = 0;
 
+        function slideImage() {
+            profileImage.style.transform = 'translateX(-5%)'; // Slide to the left
+            setTimeout(() => {
+                profileImage.src = imageArray[currentIndex];
+                profileImage.style.transform = 'translateX(0)'; // Reset the transform
+            }, 500); // Adjust the timeout to match the transition duration
+            currentIndex = (currentIndex + 1) % imageArray.length;
+        }
+
+        slideImage(); // Initial call to start sliding
+
+        setInterval(slideImage, 5000); // Set interval for sliding every 2 seconds
+    </script>
     <!-- Main -->
     <div class="main">
-        <h2>Personal Information</h2>
+        <h2>About</h2>
         <div class="card">
             <div class="card-body">
-                <!--i class="fa fa-pen fa-xs edit"></i-->
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Name</td>
-                            <td>:</td>
-                            <td>AMAL M S</td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td>:</td>
-                            <td>write2amalms(at)gmail.com  ||  amalms22(at)iitk.ac.in</td>
-                        </tr>
-                        <tr>
-                            <td>Place</td>
-                            <td>:</td>
-                            <td>IIT Kanpur, Uttar Pradesh || Thiruvananthapuram, Kerala</td>
-                        </tr>
-                        <tr>
-                            <td>B.Tech</td>
-                            <td>:</td>
-                            <td>NIT Tiruchirappalli, Tamil Nadu</td>
-                        </tr>
-                        <tr>
-                            <td>Ph.D.</td>
-                            <td>:</td>
-                            <td>IIT Kanpur, Uttar Pradesh </td>
-                        </tr>
-                        <tr>
-                            <td>Research Interests</td>
-                            <td>:</td>
-                            <td>Metamaterials, Solid Mechanics, Computational Techniques, Smart Materials, 4D-Printing</td>
-                        </tr>
-                        <!--tr>
-                            <td>Job</td>
-                            <td>:</td>
-                            <td>PhD Student  ||  Researcher at IIT Kanpur</td>
-                        </tr-->
-                        <tr>
-                            <td>Skills</td>
-                            <td>:</td>
-                            <td>Computer Aided Design(CAD), Finite Element Methods(FEM), Numerical Methods, Structural Analysis</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <p align="justify">Welcome to my homepage! My name is Amal M S, and I'm currently pursuing my Ph.D. in Aerospace Engineering with a focus on Computational Mechanics at IIT Kanpur, Uttar Pradesh. I'm deeply passionate about pushing the boundaries of Computational Materials Design & Analysis at the Artificially Engineered Materials and Structures (AEMS) Lab within the Department of Aerospace Engineering. My research interests primarily lie in the field of Mechanical Metamaterials, where I explore the computational study of active and programmable property modulation. By architecting micro-level geometries, I aim to enhance material properties and achieve multifunctionality, ultimately developing materials with properties that defy conventional engineering limitations.
+
+Originally from Thiruvananthapuram, Kerala, India, I completed my Bachelor's degree in Production Engineering from NIT Tiruchirappalli, Tamil Nadu. Throughout my academic journey, I have developed a strong foundation in Computer Aided Design (CAD), Finite Element Methods (FEM), Numerical Methods, and Structural Analysis. I believe that these skills, coupled with my research focus, position me well to make significant contributions to the field of Aerospace Engineering and Computational Mechanics.
+
+Beyond my academic pursuits, I am fascinated by the intersection of art and engineering ingenuity. I actively explore the potential of origami and kirigami to create novel materials and structures, adding a creative dimension to the world of metamaterials. With a commitment to innovation and a drive to explore new frontiers, I am excited about the possibilities that lie ahead in my academic and professional journey.
+                </p>            
+</div>
         </div>
 
-        <h2>SOCIAL MEDIA</h2>
+        <h2>More </h2>
         <div class="card">
             <div class="card-body">
-                <!--i class="fa fa-pen fa-xs edit"></i-->
                 <div class="social-media">
-                    <span class="fa-stack fa-sm">
-                        <a href="https://www.facebook.com/amal.ms.5074">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i></a>
-                    </span>
-                    <span class="fa-stack fa-sm">
-                        <a href="https://www.twitter.com/Amalms010">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i></a>
-                    </span>
-                    <span class="fa-stack fa-sm">
-                        <a href="https://www.instagram.com/on_.the._trail/">
+                    <!-- Facebook -->
+                    <span class="fa-stack">
+                        <a href="https://www.facebook.com/amal.ms.5074" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i></a>
+                            <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                        </a>
                     </span>
-                    <!--span class="fa-stack fa-sm">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-invision fa-stack-1x fa-inverse"></i>
+                    <!-- Twitter -->
+                    <span class="fa-stack">
+                        <a href="https://www.twitter.com/Amalms010" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </a>
                     </span>
-                    <span class="fa-stack fa-sm">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i-->
+                    <!-- Instagram -->
+                    <span class="fa-stack">
+                        <a href="https://www.instagram.com/on_.the._trail/" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                        </a>
+                    </span>
+                    <!-- ResearchGate -->
+                    <span class="fa-stack">
+                        <a href="https://www.researchgate.net/profile/Amal-M-S-2" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-researchgate fa-stack-1x fa-inverse"></i>
+                        </a>
+                    </span>
+                    <!-- Google Scholar -->
+                    <span class="fa-stack">
+                        <a href="https://scholar.google.com/citations?user=X0hMINoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-google-scholar fa-stack-1x fa-inverse"></i>
+                        </a>
                     </span>
                 </div>
             </div>
